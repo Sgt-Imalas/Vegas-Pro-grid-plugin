@@ -33,6 +33,16 @@ namespace GridPlugin
             }
             this.ArrangeGrid(MyVegas.Project , rows, columns, startX, startY,resetOnly);
         }
+
+        /// <summary>
+        /// Creates the Video Grid
+        /// </summary>
+        /// <param name="p"></param>
+        /// <param name="rows"></param>
+        /// <param name="columns"></param>
+        /// <param name="startX"></param>
+        /// <param name="startY"></param>
+        /// <param name="resetOnly"></param>
         private void ArrangeGrid(Project p, int rows, int columns, int startX, int startY, bool resetOnly)
         {
             List<VideoEvent> selectedVideoEvents = this.GetSelectedVideoEvents(p);
@@ -86,6 +96,11 @@ namespace GridPlugin
                 }
             }
         }
+        /// <summary>
+        /// Returns all selected Video Events as a list
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
 
         private List<VideoEvent> GetSelectedVideoEvents(Project p)
         {
